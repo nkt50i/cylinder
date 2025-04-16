@@ -64,13 +64,13 @@ st.markdown("""
     </p>
     <p style="text-align:left; font-size: 18px;">
         Данный проект можно посмотреть и скачать на 
-        <a href="https://github.com/nkt50i/Ellips" target="_blank" style="font-weight: bold;">
+        <a href="https://github.com/nkt50i/cylinder" target="_blank" style="font-weight: bold;">
         GitHub</a>.
     </p>
 """, unsafe_allow_html=True)
 
 st.subheader("🔗 GitHub-репозиторий")
-st.image("qr_github.png", caption="Ellips", width=250)
+st.image("qr_github.png", caption="cylinder", width=250)
 
 st.subheader("📄 Публикация")
 st.image("qr_paper.png", caption="Маклаков Д. В. Аналитические методы гидродинамики.", width=250)

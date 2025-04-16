@@ -1,7 +1,7 @@
 import qrcode
 
 # Ссылка на GitHub-репозиторий
-github_url = "https://github.com/nkt50i/Ellips"
+github_url = "https://github.com/nkt50i/cylinder"
 qr1 = qrcode.make(github_url)
 qr1.save("qr_github.png")
 
