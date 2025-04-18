@@ -9,7 +9,7 @@ boundaries = MeshFunction("size_t", mesh, "ellips_0275_facet_region.xml")
 ds = Measure("ds", subdomain_data=boundaries)
 
 # Определение функционального пространства
-V = FunctionSpace(mesh, "CG", 3)
+V = FunctionSpace(mesh, "CG", 2)
 
 # Информации о сетке и числе искомых величин
 n_c = mesh.num_cells()
@@ -44,7 +44,7 @@ u = Function(V)
 solve(a == L, u, bcs)
 
 # Вычисление скорости
-V_vector = VectorFunctionSpace(mesh, "CG", 3)
+V_vector = VectorFunctionSpace(mesh, "CG", 2)
 velocity = project(grad(u), V_vector)
 velocity_magnitude = project(sqrt(dot(velocity, velocity)), V)
 
@@ -108,7 +108,7 @@ ax.legend(handles=legend_elements, loc='upper right')
 
 # Настройки графика
 plt.tight_layout()  # Оптимизация отступов
-plt.savefig('ellips_solve_fem_1.png', format="png", dpi=1000)
+plt.savefig('test.png', format="png", dpi=1000)
 ax.set_xlim(0, 1)
 ax.set_ylim(0, 1)
 ax.set_aspect('equal', adjustable='box')  # Сохранение пропорций
