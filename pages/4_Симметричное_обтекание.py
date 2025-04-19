@@ -159,7 +159,7 @@ elif menu == "Критические точки":
 
         Второй корень находится внутри круга и не представляет для нас никакого смысла.
         """
-        st.image("teor_4.png", caption="",use_container_width=True)
+        #st.image("teor_4.png", caption="",use_container_width=True)
 
     elif subtopic == "2. Кратные корни":
         r"""
@@ -173,7 +173,7 @@ elif menu == "Критические точки":
 
         Корни сливаются между собой и расположены в наивысшей точке цилиндра.
         """
-        st.image("teor_3.png", caption="",use_container_width=True)
+        #st.image("teor_3.png", caption="",use_container_width=True)
 
     elif subtopic == "3. Комплексные корни":
         r"""
@@ -195,7 +195,7 @@ elif menu == "Критические точки":
         |z_1| = |z_2| = r
         \end{aligned}$
         """
-        st.image("teor_5.png", caption="",use_container_width=True)
+        #st.image("teor_5.png", caption="",use_container_width=True)
 
     elif subtopic == "4. Бесциркулляционное течение":
         r"""
@@ -212,7 +212,7 @@ elif menu == "Критические точки":
         \end{aligned}$
 
         """
-        st.image("teor_2.png", caption="",use_container_width=True)
+        #st.image("teor_2.png", caption="",use_container_width=True)
     
 
 elif menu == "Аналитическое решение":
